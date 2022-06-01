@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react'
+import { Routes, Route } from 'react-router-dom'
+import '../src/App.css'
+import { data } from './Components/Context/Context'
+import Form from './Components/Form/Form'
+import Nav from './Components/Navbar/Nav'
+import Contact from './Components/Contact/Contact'
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
 
-export default App;
+  const [contact, setcontact] = useState([])
+
+  return (
+    <div className='main'>
+      <div className='bg' >
+        <data.Provider value={{ contact, setcontact }}>
+          <Nav />
+          <Routes>
+            <Route path='/' element={<Form/>}></Route>
+            <Route path='/contact' element={<Contact/>}></Route>
+          </Routes>
+        </data.Provider>
+      </div>
+
+    </div>
+  )
+}
+export default App

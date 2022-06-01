@@ -1,0 +1,15 @@
+.nav{
+    width: 100vw;
+    height: 7vh;
+    background-color: rgba(0, 0, 0, 0.311);
+    border-radius: 2vmax;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    color: white;
+    font-family:Gallery Modern;
+    font-weight: 700;
+    letter-spacing: 2px;
+}

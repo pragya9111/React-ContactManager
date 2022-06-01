@@ -1,0 +1,48 @@
+.container2 {
+    width: 100vw;
+    height: 91vh;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 6vh;
+    overflow-x: auto;
+    color: white;
+}
+
+.table {
+    font-family: montserrat;
+    border-collapse: collapse;
+    width: 95vw;
+}
+
+.table td,
+.table th {
+    border-bottom: 1px solid rgba(222, 222, 222, 0.885);
+    padding: 2vmin;
+    color: white;
+}
+
+.table tr:nth-child(even) {
+    background-color: transparent;
+}
+
+.table tr:hover {
+    background-color: rgba(0, 0, 0, 0.311);
+}
+
+.table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: transparent;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+i {
+    color: white;
+}
